@@ -21,7 +21,7 @@ int main() {
     cout << "B5: " << B5 << endl;
     cout << "B6: " << B6 << endl;
     cout << "4------------------------"<<endl;
-    cout << "B2: ";
+    cout << "Input B2: ";
     cin >> B2;
     cout << "B2: " << B2 << endl;
     cout << "5------------------------"<<endl;
