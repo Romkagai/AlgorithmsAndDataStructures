@@ -1,5 +1,17 @@
 using namespace std;
-#include "romkagaiLib.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <math.h>
+#include <ctime>
+#include <locale>
+#include <iostream>
+#include <time.h>
+#include <iomanip>
+#include <string.h>
+
+#define UI unsigned int
+
 template <class T>
 class Array
 {
@@ -141,7 +153,7 @@ template <class T> Array <T>& Array <T>::operator+=(T key)
 	{
 		t[i] = a[i];
 	}
-	t[n] = key; //изменение
+	t[n] = key; //ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГҐ
 	delete[]a;
 	a = t;
 	n++;
@@ -191,7 +203,7 @@ template <class T> Array <T>& Array <T>::operator-=(T key)
 		this->ShiftRight(pos);
 	}
 	else {
-		cout << ("Данное значение отсутствует в массиве");
+		cout << ("Г„Г Г­Г­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ Г®ГІГ±ГіГІГ±ГІГўГіГҐГІ Гў Г¬Г Г±Г±ГЁГўГҐ");
 	}
 	return *this;
 }
@@ -208,12 +220,12 @@ template <class T> Array <T>& Array<T>::DelPosEq(int pos)
 {
 	try {
 		if (pos < 0 || pos >= n) {
-			throw ("Индекс не входит в диапазон");
+			throw ("Г€Г­Г¤ГҐГЄГ± Г­ГҐ ГўГµГ®Г¤ГЁГІ Гў Г¤ГЁГ ГЇГ Г§Г®Г­");
 		}
 		this->ShiftRight(pos);
 	}
 	catch (char* s) {
-		cout << "Ошибка: " << s << "\nУдаляем первый элемент";
+		cout << "ГЋГёГЁГЎГЄГ : " << s << "\nГ“Г¤Г Г«ГїГҐГ¬ ГЇГҐГ°ГўГ»Г© ГЅГ«ГҐГ¬ГҐГ­ГІ";
 		this->ShiftRight(0);
 	}
 	return *this;
@@ -226,12 +238,12 @@ template <class T> Array <T> Array <T>::DelPosNew(int pos)
 	}
 	try {
 		if (pos < 0 || pos >= n) {
-			throw ("Индекс не входит в диапазон");
+			throw ("Г€Г­Г¤ГҐГЄГ± Г­ГҐ ГўГµГ®Г¤ГЁГІ Гў Г¤ГЁГ ГЇГ Г§Г®Г­");
 		}
 		Result.ShiftRight(pos);
 	}
 	catch (char* s) {
-		cout << "Ошибка: " << s << "\nУдаляем первый элемент";
+		cout << "ГЋГёГЁГЎГЄГ : " << s << "\nГ“Г¤Г Г«ГїГҐГ¬ ГЇГҐГ°ГўГ»Г© ГЅГ«ГҐГ¬ГҐГ­ГІ";
 		Result.ShiftRight(0);
 	}
 	return Result;
