@@ -1,5 +1,11 @@
 #define UI unsigned int
-#include "romkagaiLib.h"
+#include <locale.h>
+#include <iostream>
+#include <Windows.h>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
 #include <iostream>
 
 //Условие: Естественная сортировка на трех файлах
