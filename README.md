@@ -1,4 +1,4 @@
 # AlgorithmsAndDataStructures
-Lot's of Algorithms and data structures on C++
-Sorting algorithms, different helpful Classes and other.
-made by: Roman Gaisin
+Lot's of Algorithms and data structures on C++ <br />
+Sorting algorithms, different helpful Classes etc.<br />
+made by: Roman Gaisin<br />
