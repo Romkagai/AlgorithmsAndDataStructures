@@ -10,23 +10,23 @@ int main() {
     cout << "B4: " << B4 << endl;
     cout << "B5: " << B5 << endl;
     cout << "2------------------------"<<endl;
-    cout << "Weight of В3: " << B3.Weight() << endl;
-    cout << "Weight of В5: " << B5.Weight() << endl;
+    cout << "Weight of B3: " << B3.Weight() << endl;
+    cout << "Weight of B5: " << B5.Weight() << endl;
     if (B3 != B5) {
-        cout << "В3 != В5" << endl;
+        cout << "B3 != B5" << endl;
     }
-    else { cout << "В3 == В5" << endl; }
+    else { cout << "B3 == B5" << endl; }
     cout << "3------------------------"<<endl;
     BoolVector B6(B5);
-    cout << "В5: " << B5 << endl;
-    cout << "В6: " << B6 << endl;
+    cout << "B5: " << B5 << endl;
+    cout << "B6: " << B6 << endl;
     cout << "4------------------------"<<endl;
-    cout << "В2: ";
+    cout << "B2: ";
     cin >> B2;
     cout << "B2: " << B2 << endl;
     cout << "5------------------------"<<endl;
     B1 = B2;
-    cout << "В1: " << B1 << endl;
+    cout << "B1: " << B1 << endl;
     if (B1 == B2) {
         cout << "B1 == B2" << endl;
     }
@@ -52,7 +52,7 @@ int main() {
     }
     else { cout << "B2 != V2" << endl; }
     cout << "9------------------------"<<endl;
-    cout << "В1:" << B1 << endl;
+    cout << "B1:" << B1 << endl;
     B1 = ~B1;
     cout << "~В1: " << B1 << endl;
     int x = B1[4];
